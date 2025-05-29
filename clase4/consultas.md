@@ -43,3 +43,24 @@
 
     SELECT producto, precio    
       FROM productos;  
+
+    SELECT razonsocial, telefono
+      FROM proveedores;
+
+### Orden de registros
+
+> Si queremos ordenar los resultados de una consulta 
+> según una columna específica 
+> utilizamos el comando **ORDER BY** seguido de dicha columna
+
+    SELECT *  
+      FROM marcas  
+      ORDER BY idMarca;  
+
+    SELECT producto, precio  
+      FROM productos  
+      ORDER BY producto desc;  
+
+    SELECT producto, precio    
+      FROM productos  
+      ORDER BY idMarca, precio;  
