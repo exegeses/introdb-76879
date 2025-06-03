@@ -3,7 +3,7 @@
 > Las consultas de coincidencia utilizan un filtro con una cadena de caracteres
 > La idea en este caso es que contenga una cadena de caracteres
 
-> práctica:
+> Práctica:
 > traer producto, precio, descripción que en la columna descripción contenga la palabra 'inalámbrico'
 
     SELECT producto, precio, descripcion  
