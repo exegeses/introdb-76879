@@ -2,7 +2,7 @@
 
 /*
    Una vista es una consulta
-   si podemos almacenar dentro de nuestra base de datos
+   que podemos almacenar dentro de nuestra base de datos
    Nota: parece una tabla independiente pero en realidad no lo es
 */
 
@@ -20,3 +20,10 @@ CREATE VIEW lista_precios
       ON productos.idMarca = marcas.idMarca
      JOIN categorias
       ON productos.idCategoria = categorias.idCategoria;
+
+-- llamado a una vista
+SELECT * from lista_precios;
+
+-- listar todas las vistas en una base de datos
+SHOW FULL TABLES
+    WHERE table_type = 'VIEW';
