@@ -8,3 +8,10 @@ CREATE TABLE proveedores (
     direccion VARCHAR(100) NOT NULL,
     PRIMARY KEY (idProveedor)
 );
+
+/*
+Modificamos el tipo de dato para que quede smallint unsigned
+ALTER TABLE proveedores
+	MODIFY idProveedor smallint unsigned auto_increment;
+DESC proveedores;
+*/

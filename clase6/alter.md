@@ -11,6 +11,15 @@
 > Tener en cuenta que tenemos que repetir el tipo de datos, si no, dará error
 > también si queremos mantener la condición de nulidad debemos mencionar NOT NULL
 
+> Sintáxis alternativa:
+
+    ALTER TABLE nombreTabla
+      RENAME COLUMN nombreOLD TO nombreNew;  
+
+    ALTER TABLE personas  
+      RENAME COLUMN alta TO fecha;  
+
+
 ## Cambiar tipo de datos (y/o modificadores) de una columna
 
     ALTER TABLE nombreTabla  
@@ -26,6 +35,15 @@
 ## Agregar una columna
 
     ALTER TABLE nombreTabla  
-      ADD  
+      ADD nombreCol tipoDato [modif];
+
+    ALTER TABLE personas  
+      ADD anotaciones varchar(500);  
 
 ## Borrar una columna
+
+    ALTER TABLE nombreTabla  
+      DROP nombreCol;  
+
+    ALTER TABLE personas  
+      DROP anotacioones;  
